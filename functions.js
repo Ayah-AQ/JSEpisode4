@@ -43,17 +43,7 @@ function bookCountsByAuthor(authors) {
     bookCounts.push({ author: author.name, bookCount: author.books.length });
   });
   return bookCounts;
-  // let result=[];
-  // authors.forEach(aauthor => { let bookCount =0;
-  //   let author=aauthor.name;
-  //   books.forEach(book => {
-  //     book.authors.forEach(element => {
-  //       if (element.name ===aauthor.name)bookCount++;
-  //     });
-  //   });
-  //   result.push({author,bookCount})
-  // });
-  // return result;
+  
 }
 console.log(bookCountsByAuthor(authors));
 
@@ -76,22 +66,10 @@ function booksByColor(books) {
     
    }) 
   
-  //books.forEach(book => {
-  //   if(colors[book.color]) colors[book.color].push(book.title);
-  //   else colors[book.color]=[book.title]
-  // });
+ 
   return colors;}
 
-  // books.forEach(book => {if(colors[book.color]){
-  //    colors[book.color].push(book.title);
-  //  } else{
-  //   colors[book.color] = [book.title]
-  //  }
-   
-  // })
-
-  // return colors;
-
+  
 console.log(booksByColor(books));
 
 /**************************************************************
@@ -111,14 +89,6 @@ if(!author){
 } else {
   return author.books.map(id => getBookById(id,books).title);
 }
-//   let author = getAuthorByName(authorName ,authors);
-// if(!author){
-//   return []
-// } else {
-//   return author.books.map(id => getBookById(id,books).title);
-// }
-}
-// console.log(titlesByAuthorName("George R.R. Martin", authors, books));
 
 /**************************************************************
  * mostProlificAuthor(authors):
