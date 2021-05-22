@@ -16,6 +16,9 @@ function getBookById(bookId, books) {
 
 console.log(getBookById(12, books));
 
+
+
+
 /**************************************************************
  * getAuthorByName(authorName, authors):
  * - receives an authorName
@@ -28,6 +31,10 @@ function getAuthorByName(authorName, authors) {
   return authors.find(author => author.name.toUpperCase() == authorName.toUpperCase())
 }
 console.log(getAuthorByName("J.K. Rowling", authors));
+
+
+
+
 
 /**************************************************************
  * bookCountsByAuthor(authors):
@@ -46,6 +53,10 @@ function bookCountsByAuthor(authors) {
   
 }
 console.log(bookCountsByAuthor(authors));
+
+
+
+
 
 /**************************************************************
  * booksByColor(books):
@@ -66,10 +77,10 @@ function booksByColor(books) {
     
    }) 
   
- 
+  
   return colors;}
 
-  
+
 console.log(booksByColor(books));
 
 /**************************************************************
@@ -89,6 +100,9 @@ if(!author){
 } else {
   return author.books.map(id => getBookById(id,books).title);
 }
+
+}
+console.log(titlesByAuthorName("George R.R. Martin", authors, books));
 
 /**************************************************************
  * mostProlificAuthor(authors):
